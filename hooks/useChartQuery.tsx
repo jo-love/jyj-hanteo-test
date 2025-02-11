@@ -1,7 +1,13 @@
+import { Album } from "@/app/\btypes/top100";
 import { useInfiniteQuery } from "@tanstack/react-query";
 
+interface ChartResponse {
+  data: Album[];
+  hasNextPage: boolean;
+}
+
 export const useChartQuery = () => {
-  return useInfiniteQuery({
+  return useInfiniteQuery<ChartResponse>({
     queryKey: ["chart"],
     initialPageParam: 0,
     queryFn: async ({ pageParam }) => {

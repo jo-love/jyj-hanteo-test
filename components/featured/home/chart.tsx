@@ -15,7 +15,7 @@ const Chart = () => {
     isFetchingNextPage,
     status,
   } = useChartQuery();
-  const chartItems = chart100?.pages.flatMap((page) => page.data) ?? [];
+  const chartItems = chart100?.pages?.flatMap((page) => page.data) ?? [];
 
   useEffect(() => {
     if (inView && hasNextPage && !isFetchingNextPage) {
