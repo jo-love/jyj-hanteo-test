@@ -18,7 +18,7 @@ interface SliderProps {
 }
 const Slider = ({ slides }: SliderProps) => {
   const plugin = useRef(
-    Autoplay({ delay: 3000, stopOnInteraction: false, playOnInit: false }),
+    Autoplay({ delay: 3000, stopOnInteraction: false, playOnInit: true }),
   );
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
