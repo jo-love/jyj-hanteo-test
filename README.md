@@ -1,3 +1,6 @@
+## 배포주소
+[https://jyj-hanteo-test-imav.vercel.app/](https://jyj-hanteo-test-imav.vercel.app/)
+
 ## 1. 사용 기술 스택
 
 - Next.js 14(app router)
